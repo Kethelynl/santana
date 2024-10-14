@@ -346,6 +346,8 @@ footer{
     .formulario{
         flex-direction: column;
         width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 
     footer{
@@ -361,4 +363,10 @@ footer{
         font-size: 20px;
     }
     
+    .formuario-estyle{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: -20px;
+    }
 }
