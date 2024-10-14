@@ -1,0 +1,357 @@
+main{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* container com rolamento  */
+.banner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    cursor: grab;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/vidro3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.banner.segundo{
+    background-image: url(../img/fábrica.jpg);
+}
+
+.banner.terceiro{
+    background-image: url(../img/escritorio.jpg);
+}
+
+.banner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background:  rgb(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.banner h1{
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px #060333;
+    font-size: 40px;
+}
+
+.banner p{
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    font-size: 20px;
+}
+
+.banner img{
+    width: 80px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+    z-index: 2;
+    cursor: pointer;
+}
+.slide-nav-button{
+    background: transparent;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.slide-nav-previous{
+    left: 0;
+}
+
+.slide-nav-next{
+    right: 0;
+}
+
+.categorias{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container1_cgt, .container2_cgt{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.elementor-icon{
+    margin: 10px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #2b2679;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease;
+}
+
+.elementor-icon.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.marcas_parceiras{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.marca{
+    margin: 10px;
+}
+
+.marca img{
+    width: 100%;
+    height: 90px;
+}
+
+.prc-text{
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    color: #060333;
+}
+
+.prc-text.hr{
+    border: solid 1px #b91c1c;
+    width: 100%;
+}
+
+.trabalho{
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin-top: 200px;
+   background-color: #060333;
+   color: white;
+   padding: 10px;
+}
+
+.trabalho h3{
+    font-size: 30px;
+}
+
+.trabalhos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.img_trabalhos{
+    margin: 30px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.img_trabalhos:hover{
+    transform: scale(1.1);
+}
+
+.img_trabalhos img{
+    width: 100%;
+    height: 300px;
+}
+
+.btn-confira a{
+    color: white;
+    transition: all ease 0.4s;
+}
+
+.btn-confira a:hover{
+    color: rgb(48, 49, 112);
+}
+
+.contatos{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo_contatos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo_contatos h3{
+    font-size: 30px;
+}
+
+.titulo_contatos hr{
+    border: solid 1px #060333;
+    width: 100%;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.formuario-estyle{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.input-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+}
+
+.input-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px;
+}
+
+.entrada{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+}
+
+input{
+    padding: 5px;
+    border: solid 1px #060333;
+    background-color: rgb(223, 223, 223);
+    transition: all ease 0.4s;
+}
+
+input:hover, textarea:hover{
+    background-color: rgb(187, 186, 186);
+}
+
+textarea{
+   height: 30vh;
+   background-color:  rgb(223, 223, 223);
+   border: solid 1px #060333;
+   transition: all ease 0.4s;
+}
+
+.formulario button{
+    position: absolute;
+    padding: 10px 40px 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #060333;
+    right: 0;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.formulario button:hover{
+    background-color: #130e53;
+}
+
+footer{
+    margin-top: 100px;
+    width: 100%;
+    background-color: rgb(27, 25, 25);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 200px;
+}
+
+.bloco{
+    margin: 20px;
+    margin-top: 40px;
+}
+
+.cont-img{
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-img img{
+    width: 50px;
+}
+
+.cont{
+    display: flex;
+    margin-top: 20px;
+}
+
+.cont-number{
+    margin-top: 10px;
+}
+
+@media(max-width:480px){
+    .categorias{
+        flex-direction: column;
+    }
+
+    .marcas_parceiras{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .trabalhos{
+        flex-direction: column;
+        margin-left: -15px;
+    }
+
+    .formulario{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .bloco{
+        margin-bottom: 100px;
+    }
+}
