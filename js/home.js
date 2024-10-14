@@ -71,6 +71,10 @@ function menushow(){
     click = 1
   }
 }
+
+
+
+
 window.addEventListener('scroll', showIconsOnScroll);
 btn_rigth.addEventListener('click', rigth)
 btn_left.addEventListener('click', left)
